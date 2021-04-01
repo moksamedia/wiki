@@ -134,7 +134,7 @@ module.exports = {
     `, [page.title, page.description, page.title, page.description, page.safeContent, page.path, page.localeCode])
   },
   /**
-   * DELETEhttps://github.com/cincheo/jsweet-candy-quickstart.git
+   * DELETE
    *
    * @param {Object} page Page to delete
    */
