@@ -77,7 +77,6 @@ export default {
       this.editor.setData(this.$store.get('editor/content'))
     }
 
-
     this.editor.model.document.on('change:data', _.debounce(evt => {
         this.$store.set('editor/content', beautify(this.editor.getData(), { indent_size: 2, end_with_newline: true }))
     }, 300))
