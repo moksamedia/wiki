@@ -89,10 +89,16 @@ module.exports = {
       for (let i=0;i<results.rows.length;i++) {
         let row = results.rows[i];
         let content = row.content;
-        let matches = content.match(regex);
-        matches = matches != null ? matches : [];
-        results.rows[i].matches = matches.slice(0,10);
-        results.rows[i].numMatches = matches.length;
+        if (content) {
+          let matches = content.match(regex);
+          matches = matches != null ? matches : [];
+          results.rows[i].matches = matches.slice(0,10);
+          results.rows[i].numMatches = matches.length;
+        }
+        else {
+          results.rows[i].matches = [];
+          results.rows[i].numMatches = 0;
+        }
       }
 
       return {
@@ -100,7 +106,8 @@ module.exports = {
         suggestions,
         totalHits: results.rows.length
       }
-    } catch (err) {
+    }
+    catch (err) {
       WIKI.logger.warn('Search Engine Error:')
       WIKI.logger.warn(err)
     }
