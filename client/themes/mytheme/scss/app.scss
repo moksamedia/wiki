@@ -1226,3 +1226,84 @@ span.cm-comment {
     display: none;
   }
 }
+
+@media (max-width: 700px) {
+  .v-main .contents {
+    .tib,
+    .tibetan {
+      font-size: $tibFontSize*0.9;
+      line-height: 1.0;
+    }
+    blockquote {
+      margin: 15px 0;
+    }
+    p, ol, ul, li {
+      font-size: 1.0rem;
+    }
+    p {
+      padding: 1.0rem 0 0;
+    }
+    p.tighter {
+      padding: 0 0 0;
+    }
+    p.less-tighter {
+      padding: 5px 0 0;
+    }
+    h1 {
+      border-bottom: 1px solid white;
+      margin-bottom: 1.5rem;
+      padding-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    h2 {
+      border-bottom: 1px solid rgb(146, 146, 146);
+      border-top: 1px solid rgb(146, 146, 146);
+      margin-bottom: 1rem;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      margin-top: 4rem;
+      font-size: 1.3rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 1.4rem;
+      padding: 5px;
+      border-radius: 3px;
+      margin-top: 3rem;
+      font-size: 1.0rem;
+    }
+    h4 {
+      font-size: 0.9rem;
+      margin-top: 2.0rem;
+      border-bottom: 1px solid rgb(146, 146, 146);
+      margin-bottom: 1rem;
+    }
+    h5 {
+      font-size: 0.9rem;
+      margin-top: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    h5 + p, h4 + p {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .text-tiny {
+      font-size: 0.7em;
+    }
+
+    .text-small {
+      font-size: 0.85em;
+    }
+
+    .text-big {
+      font-size: 1.4em;
+    }
+
+    .text-huge {
+      font-size: 1.8em;
+    }
+  }
+
+}
