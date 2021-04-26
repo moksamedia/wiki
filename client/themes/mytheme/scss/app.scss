@@ -963,6 +963,7 @@ $tibColorLight: #283593;
 $tibColorDark: #d4d9ff;
 
 $tibFontSize: 160%;
+$tibFontSizeMobile: 140%;
 
 .tib,
 .tibetan {
@@ -1231,7 +1232,7 @@ span.cm-comment {
   .v-main .contents {
     .tib,
     .tibetan {
-      font-size: $tibFontSize*0.9;
+      font-size: $tibFontSizeMobile;
       line-height: 1.0;
     }
     blockquote {
@@ -1304,6 +1305,10 @@ span.cm-comment {
     .text-huge {
       font-size: 1.8em;
     }
+
+  }
+  .container .layout.row .flex.page-col-content {
+    padding: 3% !important;
   }
 
 }
